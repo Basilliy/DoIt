@@ -73,6 +73,7 @@ public class User {
             pr_statement.setString(1, login);
             pr_statement.setString(2, password);
 
+            
             ResultSet res = pr_statement.executeQuery();
 
             if (res.next()) {
