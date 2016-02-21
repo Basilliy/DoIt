@@ -2,19 +2,20 @@ package controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
 import javax.swing.*;
 import java.awt.*;
 
 @Controller
-@RequestMapping(value="Start")
+@RequestMapping("/start")
 public class MainController {
     public MainController(){
-        JOptionPane.showMessageDialog(new Frame(), "Hi");
+        System.out.println("Hi_start");
+        //JOptionPane.showMessageDialog(new Frame(), "Hi drug");
     }
-    @RequestMapping(value="go")
+    @RequestMapping("/what")
     public void go(){
-        JOptionPane.showMessageDialog(new Frame(), "Hi");
+        System.out.println("Hi_ 2");
+        JOptionPane.showMessageDialog(new Frame(), "Hi rus");
     }
 }
